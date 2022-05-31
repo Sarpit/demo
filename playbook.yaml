@@ -1,7 +1,6 @@
 ---
  - hosts: localhost
    tasks:
-     - name: Installing  nginx 
-       apt:
-         name: "{{ pkg }}"
-         state: present
+     - name: Printing variable
+       debug:
+         msg: "Package name is {{ pkg }}"
