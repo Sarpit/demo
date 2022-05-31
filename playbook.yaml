@@ -2,6 +2,6 @@
  - hosts: localhost
    tasks:
      - name: Installing  nginx 
-       yum:
+       apt:
          name: "{{ pkg }}"
          state: present
