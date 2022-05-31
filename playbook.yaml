@@ -3,5 +3,5 @@
    tasks:
      - name: Installing  nginx 
        yum:
-         name: nginx
+         name: "{{ pkg }}"
          state: present
